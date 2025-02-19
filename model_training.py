@@ -41,7 +41,7 @@ model = Sequential([
     Dropout(0.2),
     LSTM(units=50),
     Dropout(0.2),
-    Dense(units=1)  # Previsão do preço de fechamento
+    Dense(units=1)
 ])
 
 model.compile(optimizer='adam', loss='mean_squared_error')
